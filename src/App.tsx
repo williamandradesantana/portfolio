@@ -1,3 +1,9 @@
+import { Header } from "./components/Header";
+
 export function App() {
-  return <h1>Portfolio</h1>;
+  return (
+    <div className="min-h-screen overflow-y-auto bg-white">
+      <Header />
+    </div>
+  );
 }
