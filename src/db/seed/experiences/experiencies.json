@@ -1,0 +1,26 @@
+{
+  "experiences": [
+    {
+      "position": "Desenvolvedor Full Stack",
+      "company": "Quantum Educacional",
+      "description": "A Quantum é uma empresa do segmento educacional que oferece produtos como cursos de programação para crianças e alunos do ensino fundamental e médio, atendendo escolas públicas e particulares.",
+      "duration": "Dez 2024 - Mar 2025",
+      "mainActivities": [
+        "Desenvolvimento de novas funcionalidades e manutenção utilizando Django",
+        "Redesign do sistema, utilizando Material UI para melhorar a experiência do usuário",
+        "Versionamento de código com Git e GitLab"
+      ]
+    },
+    {
+      "position": "Desenvolvedor RPA",
+      "company": "InfluirTec",
+      "description": "Atuei na análise e otimização de processos, garantindo que as automações refletissem fielmente os fluxos de negócio. Desenvolvi soluções automatizadas que reduziram o tempo de execução, anteciparam falhas de processo e elevaram a confiabilidade operacional.",
+      "duration": "Fev 2023 - Nov 2024",
+      "mainActivities": [
+        "Desenvolvimento de automações em Python e JavaScript",
+        "Implantação de soluções automatizadas",
+        "Testes de automações"
+      ]
+    }
+  ]
+}

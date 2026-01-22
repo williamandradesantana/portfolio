@@ -1,0 +1,103 @@
+{
+  "projects": [
+    {
+      "name": "ObraSpec API",
+      "description": "API realizada para JotaNunes construtora, que permite a criação de modo padronizável e escalável de requistos de obras, como também a geração automática de documentos.",
+      "repositoryLink": "https://github.com/Squad15-JotaNunes/ObraSpecAPI",
+      "applicationLink": null,
+      "stack": {
+        "tecnologies": [
+          "Python",
+          "Django",
+          "Git",
+          "Github",
+          "PostgreSQL",
+          "Docker",
+          "Django Rest Framework",
+          "Swagger"
+        ]
+      },
+      "observation": null
+    },
+    {
+      "name": "Solução para a Atos Capital",
+      "description": "Um dashboard para a empresa Atos Capital, que permite a visualização de dados de clientes além de uma integração DB | IA | WhatsApp para consultas personalizadas.",
+      "repositoryLink": "https://github.com/KaioVinicios/AtosCapitalBackend",
+      "applicationLink": null,
+      "stack": {
+        "tecnologies": [
+          "React",
+          "TypeScript",
+          "Django",
+          "Django Rest Framework",
+          "Git",
+          "Github",
+          "Docker",
+          "Swagger",
+          "N8N",
+          "Waha",
+          "Gemini API"
+        ]
+      },
+      "observation": "Há mais informações e imagens sobre esse projeto no meu LinkedIn > Experiência."
+    },
+    {
+      "name": "Catálogo de Jogos com Spring Boot",
+      "description": "Aplicação Java com Spring Boot para gerenciamento de estúdios e jogos. O projeto permite o cadastro, listagem e busca de jogos e estúdios, utilizando arquitetura modularizada, banco de dados PostgreSQL (produção) e H2 (testes), além de documentação automática via Swagger/OpenAPI.",
+      "repositoryLink": "https://github.com/williamandradesantana/game-catalog-with-spring-boot",
+      "applicationLink": null,
+      "stack": {
+        "tecnologies": [
+          "Java",
+          "Spring Boot",
+          "PostgreSQL",
+          "H2 Database",
+          "Swagger/OpenAPI",
+          "JUnit",
+          "Git",
+          "Github",
+          "Docker"
+        ]
+      },
+      "observation": null
+    },
+    {
+      "name": "Ecommerce API com Spring Boot",
+      "description": "Este projeto é uma API REST de Ecommerce, desenvolvida como projeto pessoal de estudo, com foco em boas práticas de backend, segurança e arquitetura, simulando um cenário real de mercado.",
+      "repositoryLink": "https://github.com/williamandradesantana/ecommerce-with-spring-boot",
+      "applicationLink": null,
+      "stack": {
+        "tecnologies": [
+          "Java",
+          "Spring Boot",
+          "Spring Security",
+          "OAUTH2",
+          "JWT",
+          "Authorization Server",
+          "PostgreSQL",
+          "Swagger/OpenAPI",
+          "Git",
+          "Github",
+          "Docker"
+        ]
+      }
+    },
+    {
+      "name": "Veritas CLIMA-MIND",
+      "description": "Este projeto propõe o desenvolvimento de um sistema integrado de análise psicológica e climática utilizando tecnologias de inteligência artificial, sem a necessidade de avaliação direta com usuários. A plataforma combinará técnicas de machine learning, Retrieval-Augmented Generation (RAG), processamento de voz com (Ex: Whisper) e Humanos Virtuais (HVs) para criar uma solução que aborda tanto aspectos psicológicos quanto a desinformação climática.",
+      "repositoryLink": "https://github.com/williamandradesantana/veritas-clima-mind-rag",
+      "applicationLink": null,
+      "stack": {
+        "tecnologies": [
+          "Python",
+          "Ollama",
+          "IA",
+          "RAG",
+          "Git",
+          "Github",
+          "Pipecone"
+        ]
+      }
+    }
+  ]
+}

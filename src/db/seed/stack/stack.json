@@ -1,0 +1,18 @@
+{
+  "stack": {
+    "tecnologies": [
+      "Python",
+      "Django",
+      "Django Rest Framework",
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "Java",
+      "Spring Boot",
+      "Git",
+      "GitHub",
+      "MySQL",
+      "PostgreSQL"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "type": "Frontend",
+      "tecnologies": [
+        "React.js",
+        "Next.js",
+        "JavaScript",
+        "TypeScript",
+        "Tailwind CSS",
+        "Material UI"
+      ]
+    },
+    {
+      "type": "Backend",
+      "tecnologies": [
+        "Python",
+        "Django",
+        "Django Rest Framework",
+        "Java",
+        "Spring Boot",
+        "Rest APIs"
+      ]
+    },
+    {
+      "type": "Database",
+      "tecnologies": ["MySQL", "PostgreSQL", "Django ORM"]
+    },
+    {
+      "type": "DevOps & Tools",
+      "tecnologies": ["Docker", "Git", "Github"]
+    }
+  ]
+}
