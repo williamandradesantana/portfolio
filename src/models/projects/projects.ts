@@ -4,7 +4,7 @@ export type ProjectsModel = {
   name: string;
   description: string;
   repositoryLink: string;
-  applicationLink?: string;
-  stack: StackModel[];
-  observation?: string;
+  applicationLink?: string | null;
+  stack: StackModel;
+  observation?: string | null;
 };
