@@ -1,5 +1,6 @@
 import { About } from "../About";
 import { CertificationsAndEducation } from "../CertificationsAndEducation";
+import { Contact } from "../Contact";
 import { Experiences } from "../Experiences";
 import { Hero } from "../Hero";
 import { Projects } from "../Projects";
@@ -14,6 +15,7 @@ export function Main() {
       <Projects />
       <CertificationsAndEducation />
       <Skills />
+      <Contact />
     </main>
   );
 }

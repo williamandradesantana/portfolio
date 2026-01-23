@@ -14,10 +14,7 @@ export function Skills() {
   }, []);
 
   return (
-    <section
-      id="skills"
-      className="min-h-screen mx-auto max-w-6xl px-6 py-24 scroll-mt-24"
-    >
+    <section id="skills" className="mx-auto max-w-6xl px-6 py-24 scroll-mt-24">
       <header className="mb-16">
         <span className="text-zinc-400 text-md uppercase tracking-[0.2em]">
           Skills
