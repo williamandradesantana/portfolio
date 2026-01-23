@@ -4,7 +4,7 @@ import type { StackModel } from "../../models/stack/stack";
 import { Span } from "../Span";
 
 export function About() {
-  const commomParagraphClasses = "text-zinc-300";
+  const commomParagraphClasses = "text-zinc-500";
 
   const [stack, setStack] = useState<StackModel>();
 
@@ -28,11 +28,11 @@ export function About() {
       )}
     >
       <div className="flex flex-col gap-4 max-w-lg">
-        <span className="text-zinc-400 text-sm uppercase tracking-widest">
+        <span className="text-zinc-600 dark:text-zinc-400 text-sm uppercase tracking-widest">
           Sobre mim
         </span>
 
-        <h2 className="text-white text-3xl font-semibold leading-tight">
+        <h2 className="text-zinc-900 dark:text-white text-3xl font-semibold leading-tight">
           Um pouco sobre minha trajetória
         </h2>
 
@@ -44,17 +44,20 @@ export function About() {
 
         <p className={commomParagraphClasses}>
           Minha principal especialidade está no desenvolvimento backend com
-          <strong className="text-white font-medium">
+          <strong className="text-zinc-900 dark:text-white font-medium">
             {" "}
             Java e Spring Boot
           </strong>
           , além de experiência com{" "}
-          <strong className="text-white font-medium">Python e Django</strong>.
+          <strong className="text-zinc-900 dark:text-white font-medium">
+            Python e Django
+          </strong>
+          .
         </p>
 
         <p className={commomParagraphClasses}>
           No frontend, tenho concentrado meus estudos e projetos em
-          <strong className="text-white font-medium">
+          <strong className="text-zinc-900 dark:text-white font-medium">
             {" "}
             React com TypeScript
           </strong>
@@ -68,7 +71,10 @@ export function About() {
       </div>
 
       <div className="flex flex-col gap-4">
-        <h3 className="text-zinc-400 text-sm">Stack que utilizo</h3>
+        <h3 className="text-zinc-600 dark:text-zinc-400 text-sm">
+          Stack que utilizo
+        </h3>
+
         <div className="flex flex-wrap gap-2">
           {stack?.tecnologies.map((technology, index) => (
             <Span key={`${technology}-${index}`}>{technology}</Span>

@@ -21,7 +21,10 @@ export function Header() {
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
   ) {
     event.preventDefault();
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+    setTheme((prevState) => {
+      const nextTheme = prevState === "dark" ? "light" : "dark";
+      return nextTheme;
+    });
   }
 
   useEffect(() => {
@@ -34,7 +37,7 @@ export function Header() {
   }
 
   const commonLinkClasses =
-    "text-zinc-200 hover:text-zinc-500 transition-colors text-sm font-medium";
+    "text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-500 transition-colors text-sm font-medium";
 
   return (
     <header className="top-0 fixed z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/80">
@@ -118,7 +121,7 @@ export function Header() {
             href="#"
             aria-label="Mudar tema"
             onClick={handleChangeTheme}
-            className="rounded-md p-2 text-zinc-200 transition hover:bg-zinc-100 hover:text-zinc-900"
+            className="rounded-md p-2 text-zinc-600 dark:text-zinc-200 transition hover:bg-zinc-100 hover:text-zinc-900"
           >
             {nextThemeIcon[theme]}
           </a>

@@ -40,7 +40,9 @@ export function ProjectFooter({ project }: ProjectProps) {
       </div>
 
       {project.observation && (
-        <p className="text-zinc-400 text-xs">{project.observation}</p>
+        <p className="text-zinc-900 dark:text-zinc-400 text-xs">
+          {project.observation}
+        </p>
       )}
     </div>
   );

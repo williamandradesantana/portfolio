@@ -22,10 +22,10 @@ export function Projects() {
       className="min-h-screen flex flex-col mx-auto px-6 items-center max-w-6xl scroll-mt-24"
     >
       <div className="w-full md:max-w-6xl">
-        <span className="text-zinc-400 text-sm uppercase tracking-widest">
+        <span className="text-zinc-600 dark:text-zinc-400 text-sm uppercase tracking-widest">
           Projetos
         </span>
-        <h2 className="text-white text-3xl font-semibold leading-tight mt-1">
+        <h2 className="text-zinc-900 dark:text-white text-3xl font-semibold leading-tight mt-1">
           Trabalhos relacionados
         </h2>
       </div>

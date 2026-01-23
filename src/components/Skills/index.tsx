@@ -16,10 +16,10 @@ export function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-24 scroll-mt-24">
       <header className="mb-16">
-        <span className="text-zinc-400 text-md uppercase tracking-[0.2em]">
+        <span className="text-zinc-600 dark:text-zinc-400 text-md uppercase tracking-[0.2em]">
           Skills
         </span>
-        <h2 className="mt-2 text-4xl font-semibold text-white">
+        <h2 className="mt-2 text-4xl font-semibold text-zinc-900 dark:text-white">
           Tecnologias que uso
         </h2>
       </header>
@@ -27,8 +27,9 @@ export function Skills() {
       <ul className="grid grid-cols-1 gap-12 md:grid-cols-2">
         {skills.map((skill) => (
           <li key={skill.type} className="space-y-4">
-            {/* Categoria */}
-            <h3 className="text-zinc-300 font-medium">{skill.type}</h3>
+            <h3 className="text-zinc-700 dark:text-zinc-300 font-medium">
+              {skill.type}
+            </h3>
             <div className="flex flex-wrap gap-2">
               {skill.tecnologies.map((tech) => (
                 <span
@@ -39,7 +40,8 @@ export function Skills() {
                     px-4
                     py-1.5
                     text-sm
-                    text-zinc-300
+                    text-zinc-100
+                    dark:text-zinc-300
                     border
                     border-zinc-800
                     backdrop-blur

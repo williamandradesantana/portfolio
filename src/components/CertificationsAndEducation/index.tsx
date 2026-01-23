@@ -39,16 +39,17 @@ export function CertificationsAndEducation() {
       className="flex flex-col mt-12 mx-auto px-6 items-center w-full max-w-6xl scroll-mt-24"
     >
       <div className="w-full md:max-w-6xl">
-        <span className="text-zinc-400 text-sm uppercase tracking-widest">
+        <span className="text-zinc-600 dark:text-zinc-400 text-sm uppercase tracking-widest">
           Certificações
         </span>
-        <h2 className="text-white text-3xl font-semibold leading-tight mt-1">
+
+        <h2 className="text-zinc-900 dark:text-white text-3xl font-semibold leading-tight mt-1">
           Educação e Certificados
         </h2>
       </div>
 
       <div className="w-full mt-12">
-        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-500 uppercase">
+        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-500 uppercase">
           <GraduationCap size={16} />
           Educação
         </h3>
@@ -60,7 +61,7 @@ export function CertificationsAndEducation() {
               title={education.graduation}
               description={education.description}
               footer={
-                <div className="flex justify-between text-sm text-zinc-400">
+                <div className="flex justify-between text-sm text-zinc-600 dark:text-zinc-400">
                   <span>{education.institution}</span>
                   <span>{education.duration}</span>
                 </div>
@@ -71,7 +72,7 @@ export function CertificationsAndEducation() {
       </div>
 
       <div className="w-full mt-12">
-        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-500 uppercase">
+        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-500 uppercase">
           <Star size={16} />
           Certificados
         </h3>
@@ -83,7 +84,7 @@ export function CertificationsAndEducation() {
               title={certification.name}
               description={certification.institution}
               footer={
-                <div className="flex items-center justify-between text-sm text-zinc-400">
+                <div className="flex items-center justify-between text-sm text-zinc-600 dark:text-zinc-400">
                   <span>{certification.yearOfCompletion}</span>
 
                   {certification.link && (
@@ -91,7 +92,12 @@ export function CertificationsAndEducation() {
                       href={certification.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-300 underline-offset-4 hover:underline hover:text-white transition"
+                      className="
+                      text-zinc-700 dark:text-zinc-300
+                      hover:text-zinc-900 dark:hover:text-white
+                      underline-offset-4 hover:underline
+                      transition
+                    "
                     >
                       Ver certificados
                     </a>
