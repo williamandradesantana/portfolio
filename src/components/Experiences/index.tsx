@@ -19,7 +19,7 @@ export function Experiences() {
   return (
     <section
       id="experiences"
-      className="min-h-screen flex flex-col mx-auto px-6 items-center max-w-6xl"
+      className="min-h-screen flex flex-col mx-auto px-6 items-center max-w-6xl scroll-mt-24"
     >
       <div className="w-full md:max-w-6xl">
         <span className="text-zinc-400 text-sm uppercase tracking-widest">

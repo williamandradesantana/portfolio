@@ -29,6 +29,10 @@ export function Header() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  function handleCloseMenu() {
+    setIsOpen(false);
+  }
+
   const commonLinkClasses =
     "text-zinc-200 hover:text-zinc-500 transition-colors text-sm font-medium";
 
@@ -90,6 +94,7 @@ export function Header() {
           <LinkSection
             linkProps={{
               href: "#about",
+
               className: commonLinkClasses,
               "aria-label": "Ir para skills",
               title: "Ir para skills",
@@ -141,6 +146,7 @@ export function Header() {
             linkProps={{
               href: "#about",
               className: commonLinkClasses,
+              onClick: handleCloseMenu,
               "aria-label": "Ir para sobre",
               title: "Ir para sobre",
             }}
@@ -151,6 +157,7 @@ export function Header() {
             linkProps={{
               href: "#experiences",
               className: commonLinkClasses,
+              onClick: handleCloseMenu,
               "aria-label": "Ir para experiência",
               title: "Ir para experiência",
             }}
@@ -161,6 +168,7 @@ export function Header() {
             linkProps={{
               href: "#projects",
               className: commonLinkClasses,
+              onClick: handleCloseMenu,
               "aria-label": "Ir para projetos",
               title: "Ir para projetos",
             }}
@@ -171,6 +179,7 @@ export function Header() {
             linkProps={{
               href: "#certifications",
               className: commonLinkClasses,
+              onClick: handleCloseMenu,
               "aria-label": "Ir para certificações",
               title: "Ir para certificações",
             }}
@@ -181,6 +190,7 @@ export function Header() {
             linkProps={{
               href: "#about",
               className: commonLinkClasses,
+              onClick: handleCloseMenu,
               "aria-label": "Ir para skills",
               title: "Ir para skills",
             }}
@@ -191,6 +201,7 @@ export function Header() {
             linkProps={{
               href: "#contact",
               className: commonLinkClasses,
+              onClick: handleCloseMenu,
               "aria-label": "Ir para contato",
               title: "Ir para contato",
             }}

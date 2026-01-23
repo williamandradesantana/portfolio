@@ -22,7 +22,7 @@ export function About() {
     <section
       id="about"
       className={clsx(
-        "grid grid-cols-1 min-h-screen",
+        "grid grid-cols-1 min-h-screen scroll-mt-24",
         "lg:grid-cols-2 lg:gap-16",
         "max-w-6xl mx-auto px-6",
       )}

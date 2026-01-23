@@ -4,3 +4,9 @@
 * {
   font-family: "Inter Variable", sans-serif;
 }
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
