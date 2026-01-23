@@ -24,7 +24,7 @@ export function About() {
       className={clsx(
         "grid grid-cols-1 min-h-screen",
         "lg:grid-cols-2 lg:gap-16",
-        "max-w-6xl mx-auto px-6 items-center",
+        "max-w-6xl mx-auto px-6",
       )}
     >
       <div className="flex flex-col gap-4 max-w-lg">
@@ -67,7 +67,7 @@ export function About() {
         </p>
       </div>
 
-      <div className="flex flex-col w-fit mb-auto gap-4 lg:m-0">
+      <div className="flex flex-col gap-4">
         <h3 className="text-zinc-400 text-sm">Stack que utilizo</h3>
         <div className="flex flex-wrap gap-2">
           {stack?.tecnologies.map((technology, index) => (
