@@ -93,8 +93,7 @@ export function Header() {
           </LinkSection>
           <LinkSection
             linkProps={{
-              href: "#about",
-
+              href: "#skills",
               className: commonLinkClasses,
               "aria-label": "Ir para skills",
               title: "Ir para skills",
@@ -188,7 +187,7 @@ export function Header() {
           </LinkSection>
           <LinkSection
             linkProps={{
-              href: "#about",
+              href: "#skills",
               className: commonLinkClasses,
               onClick: handleCloseMenu,
               "aria-label": "Ir para skills",
