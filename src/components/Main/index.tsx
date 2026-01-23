@@ -3,6 +3,7 @@ import { CertificationsAndEducation } from "../CertificationsAndEducation";
 import { Experiences } from "../Experiences";
 import { Hero } from "../Hero";
 import { Projects } from "../Projects";
+import { Skills } from "../Skills";
 
 export function Main() {
   return (
@@ -12,6 +13,7 @@ export function Main() {
       <Experiences />
       <Projects />
       <CertificationsAndEducation />
+      <Skills />
     </main>
   );
 }
