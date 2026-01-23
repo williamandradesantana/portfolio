@@ -1,6 +1,7 @@
 import { About } from "../About";
 import { Experiences } from "../Experiences";
 import { Hero } from "../Hero";
+import { Projects } from "../Projects";
 
 export function Main() {
   return (
@@ -8,6 +9,7 @@ export function Main() {
       <Hero />
       <About />
       <Experiences />
+      <Projects />
     </main>
   );
 }
