@@ -1,10 +1,8 @@
-import { Link } from "react-router";
-
 type LinkSectionProps = {
   children: React.ReactNode;
-  linkProps: React.ComponentProps<typeof Link>;
+  linkProps: React.ComponentProps<"a">;
 };
 
 export function LinkSection({ children, linkProps }: LinkSectionProps) {
-  return <Link {...linkProps}>{children}</Link>;
+  return <a {...linkProps}>{children}</a>;
 }

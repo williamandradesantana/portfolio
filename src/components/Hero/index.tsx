@@ -3,7 +3,7 @@ import { LinkSection } from "../LinkSection";
 
 export function Hero() {
   return (
-    <section className="flex flex-col items-center text-center gap-6 max-w-xl">
+    <section className="min-h-screen flex flex-col items-center justify-center relative px-6 text-center gap-6 max-w-xl">
       <h3 className="text-zinc-300 text-md uppercase tracking-widest">
         Desenvolvedor FullStack
       </h3>
@@ -20,7 +20,7 @@ export function Hero() {
       <div className="flex gap-4 mt-4">
         <LinkSection
           linkProps={{
-            to: "#projects",
+            href: "#projects",
             "aria-label": "Ir para projetos",
             className:
               "px-5 py-2 rounded-md bg-white text-zinc-900 font-medium hover:bg-zinc-200 transition",
@@ -40,7 +40,7 @@ export function Hero() {
         </a>
       </div>
 
-      <span className="absolute bottom-6 text-zinc-400 text-2xl animate-bounce">
+      <span className="absolute bottom-20 text-zinc-400 text-2xl animate-bounce">
         ↓
       </span>
     </section>

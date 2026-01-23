@@ -35,27 +35,76 @@ export function Header() {
   return (
     <header className="top-0 z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-        <h1 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+        <LinkSection
+          linkProps={{
+            href: "/",
+            className: "text-lg font-semibold text-zinc-900 dark:text-zinc-100",
+            "aria-label": "Ir para página inicial",
+            title: "Ir para página inicial",
+          }}
+        >
           Portfolio
-        </h1>
+        </LinkSection>
 
         <nav className="hidden items-center gap-6 md:flex">
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#about",
+              className: commonLinkClasses,
+              "aria-label": "Ir para sobre",
+              title: "Ir para sobre",
+            }}
+          >
             Sobre
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#experiences",
+              className: commonLinkClasses,
+              "aria-label": "Ir para experiência",
+              title: "Ir para experiência",
+            }}
+          >
             Experiência
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#projects",
+              className: commonLinkClasses,
+              "aria-label": "Ir para projetos",
+              title: "Ir para projetos",
+            }}
+          >
             Projetos
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#certifications",
+              className: commonLinkClasses,
+              "aria-label": "Ir para certificações",
+              title: "Ir para certificações",
+            }}
+          >
             Certificações
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#about",
+              className: commonLinkClasses,
+              "aria-label": "Ir para skills",
+              title: "Ir para skills",
+            }}
+          >
             Skills
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#contact",
+              className: commonLinkClasses,
+              "aria-label": "Ir para contato",
+              title: "Ir para contato",
+            }}
+          >
             Contato
           </LinkSection>
         </nav>
@@ -88,22 +137,64 @@ export function Header() {
         )}
       >
         <div className="flex flex-col gap-3 border-t border-zinc-200 px-4 py-4">
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#about",
+              className: commonLinkClasses,
+              "aria-label": "Ir para sobre",
+              title: "Ir para sobre",
+            }}
+          >
             Sobre
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#experiences",
+              className: commonLinkClasses,
+              "aria-label": "Ir para experiência",
+              title: "Ir para experiência",
+            }}
+          >
             Experiência
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#projects",
+              className: commonLinkClasses,
+              "aria-label": "Ir para projetos",
+              title: "Ir para projetos",
+            }}
+          >
             Projetos
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#certifications",
+              className: commonLinkClasses,
+              "aria-label": "Ir para certificações",
+              title: "Ir para certificações",
+            }}
+          >
             Certificações
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#about",
+              className: commonLinkClasses,
+              "aria-label": "Ir para skills",
+              title: "Ir para skills",
+            }}
+          >
             Skills
           </LinkSection>
-          <LinkSection linkProps={{ to: "#", className: commonLinkClasses }}>
+          <LinkSection
+            linkProps={{
+              href: "#contact",
+              className: commonLinkClasses,
+              "aria-label": "Ir para contato",
+              title: "Ir para contato",
+            }}
+          >
             Contato
           </LinkSection>
         </div>
