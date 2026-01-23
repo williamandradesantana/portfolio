@@ -1,13 +1,5 @@
-import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
-import { Main } from "./components/Main";
+import { MainRouter } from "./routers/MainRouter";
 
 export function App() {
-  return (
-    <div className="min-h-screen flex flex-col overflow-y-auto bg-black">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
+  return <MainRouter />;
 }
