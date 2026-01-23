@@ -133,7 +133,7 @@ export function Header() {
         className={clsx(
           "md:hidden",
           "overflow-hidden transition-all duration-300",
-          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
+          isOpen ? "opacity-100" : "max-h-0 opacity-0",
         )}
       >
         <div className="flex flex-col gap-3 border-t border-zinc-200 px-4 py-4">

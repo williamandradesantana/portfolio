@@ -3,16 +3,16 @@ import { LinkSection } from "../LinkSection";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative px-6 text-center gap-6 max-w-xl">
+    <section className="min-h-screen flex flex-col items-center justify-center relative text-center gap-6 max-w-xl">
       <h3 className="text-zinc-300 text-md uppercase tracking-widest">
         Desenvolvedor FullStack
       </h3>
 
-      <h1 className="text-3xl md:text-5xl font-semibold text-white">
+      <h1 className="text-4xl md:text-5xl font-semibold text-white">
         William Santana
       </h1>
 
-      <p className="text-zinc-400 text-base md:text-lg leading-relaxed">
+      <p className="text-zinc-400 text-xl md:text-lg leading-relaxed">
         Criando soluções eficientes, escaláveis e alinhadas às boas práticas de
         engenharia de software.
       </p>
