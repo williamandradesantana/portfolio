@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import type { StackModel } from "../../models/stack/stack";
+import { Span } from "../Span";
 
 export function About() {
   const commomParagraphClasses = "text-zinc-300";
@@ -21,7 +22,7 @@ export function About() {
     <section
       id="about"
       className={clsx(
-        "grid grid-cols-1 gap-10",
+        "grid grid-cols-1 min-h-screen",
         "lg:grid-cols-2 lg:gap-16",
         "max-w-6xl mx-auto px-6 items-center",
       )}
@@ -66,19 +67,11 @@ export function About() {
         </p>
       </div>
 
-      <div className="flex flex-col w-fit gap-4">
+      <div className="flex flex-col w-fit mb-auto gap-4 lg:m-0">
         <h3 className="text-zinc-400 text-sm">Stack que utilizo</h3>
         <div className="flex flex-wrap gap-2">
           {stack?.tecnologies.map((technology, index) => (
-            <span
-              key={`${technology}-${index}`}
-              className={clsx(
-                "rounded-md border border-zinc-700 px-3 py-1 text-sm text-zinc-200",
-                "transition hover:border-zinc-500 hover:text-white",
-              )}
-            >
-              {technology}
-            </span>
+            <Span key={`${technology}-${index}`}>{technology}</Span>
           ))}
         </div>
       </div>
