@@ -10,7 +10,7 @@ export function About() {
 
   useEffect(() => {
     async function loadStack() {
-      const response = await fetch("src/db/seed/stack/stack.json");
+      const response = await fetch("/db/seed/stack/stack.json");
       const data = await response.json();
       setStack(data.stack);
     }

@@ -8,7 +8,7 @@ export function Experiences() {
 
   useEffect(() => {
     async function loadExperiences() {
-      const response = await fetch("src/db/seed/experiences/experiences.json");
+      const response = await fetch("/db/seed/experiences/experiences.json");
       const data = await response.json();
       setExperiences(data.experiences);
     }

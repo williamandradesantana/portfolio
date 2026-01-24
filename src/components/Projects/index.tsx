@@ -9,7 +9,7 @@ export function Projects() {
 
   useEffect(() => {
     async function loadProjects() {
-      const response = await fetch("src/db/seed/projects/projects.json");
+      const response = await fetch("/db/seed/projects/projects.json");
       const data = await response.json();
       setProjects(data.projects);
     }

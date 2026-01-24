@@ -6,7 +6,7 @@ export function Skills() {
 
   useEffect(() => {
     async function loadSkills() {
-      const response = await fetch("src/db/seed/skills/skills.json");
+      const response = await fetch("/db/seed/skills/skills.json");
       const data = await response.json();
       setSkills(data.skills);
     }

@@ -13,7 +13,7 @@ export function CertificationsAndEducation() {
 
   useEffect(() => {
     async function loadEducation() {
-      const response = await fetch("src/db/seed/education/education.json");
+      const response = await fetch("/db/seed/education/education.json");
       const data = await response.json();
       setEducation(data.education);
     }
@@ -24,7 +24,7 @@ export function CertificationsAndEducation() {
   useEffect(() => {
     async function loadCertifications() {
       const response = await fetch(
-        "src/db/seed/certifications/certifications.json",
+        "/db/seed/certifications/certifications.json",
       );
       const data = await response.json();
       setCertifications(data.certifications);
