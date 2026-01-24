@@ -5,9 +5,19 @@ import { SunIcon, MoonIcon, MenuIcon, XIcon } from "lucide-react";
 
 type AvailableThemes = "dark" | "light";
 
+const NAV_LINKS = [
+  { href: "#about", label: "Sobre" },
+  { href: "#experiences", label: "Experiência" },
+  { href: "#projects", label: "Projetos" },
+  { href: "#certifications", label: "Certificações" },
+  { href: "#contact", label: "Contato" },
+];
+
 export function Header() {
   const [theme, setTheme] = useState<AvailableThemes>(() => {
-    return (localStorage.getItem("theme") as AvailableThemes) || "dark";
+    const storageTheme =
+      (localStorage.getItem("theme") as AvailableThemes) || "dark";
+    return storageTheme;
   });
 
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +38,14 @@ export function Header() {
   }
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
+    const root = document.documentElement;
+
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+
     localStorage.setItem("theme", theme);
   }, [theme]);
 
@@ -54,66 +71,22 @@ export function Header() {
         </LinkSection>
 
         <nav className="hidden items-center gap-6 md:flex">
-          <LinkSection
-            linkProps={{
-              href: "#about",
-              className: commonLinkClasses,
-              "aria-label": "Ir para sobre",
-              title: "Ir para sobre",
-            }}
-          >
-            Sobre
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#experiences",
-              className: commonLinkClasses,
-              "aria-label": "Ir para experiência",
-              title: "Ir para experiência",
-            }}
-          >
-            Experiência
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#projects",
-              className: commonLinkClasses,
-              "aria-label": "Ir para projetos",
-              title: "Ir para projetos",
-            }}
-          >
-            Projetos
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#certifications",
-              className: commonLinkClasses,
-              "aria-label": "Ir para certificações",
-              title: "Ir para certificações",
-            }}
-          >
-            Certificações
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#skills",
-              className: commonLinkClasses,
-              "aria-label": "Ir para skills",
-              title: "Ir para skills",
-            }}
-          >
-            Skills
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#contact",
-              className: commonLinkClasses,
-              "aria-label": "Ir para contato",
-              title: "Ir para contato",
-            }}
-          >
-            Contato
-          </LinkSection>
+          {NAV_LINKS.map((link, index) => {
+            return (
+              <LinkSection
+                key={`${link.href}-${index}`}
+                linkProps={{
+                  href: link.href,
+                  className: commonLinkClasses,
+                  "aria-label": `Ir para ${link.label}`,
+                  title: `Ir para ${link.label}`,
+                }}
+              >
+                {" "}
+                {link.label}{" "}
+              </LinkSection>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-2">
@@ -129,7 +102,7 @@ export function Header() {
           <button
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label="Abrir menu"
-            className="rounded-md p-2 text-zinc-200 transition hover:bg-zinc-100 hover:text-zinc-900 md:hidden"
+            className="rounded-md p-2 text-zinc-600 dark:text-zinc-200 transition hover:bg-zinc-100 hover:text-zinc-900 md:hidden"
           >
             {isOpen ? <XIcon size={20} /> : <MenuIcon size={20} />}
           </button>
