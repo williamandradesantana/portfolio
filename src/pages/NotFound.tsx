@@ -2,11 +2,13 @@ import { Link } from "react-router";
 
 export function NotFound() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-zinc-950 px-6">
+    <main className="min-h-screen flex items-center justify-center bg-zinc-100 dark:bg-zinc-950 px-6">
       <div className="max-w-md text-center flex flex-col items-center gap-6">
-        <h1 className="text-6xl font-bold text-white">Página não encontrada</h1>
+        <h1 className="text-6xl font-bold text-black dark:text-white">
+          Página não encontrada
+        </h1>
 
-        <p className="text-zinc-400">
+        <p className="text-zinc-700 dark:text-zinc-400">
           A página que você tentou acessar não existe ou foi movida.
         </p>
 
@@ -15,11 +17,14 @@ export function NotFound() {
             to="/"
             className="
               rounded-md 
-              bg-white 
+              bg-black
+              dark:bg-white 
               px-5 py-2 
               text-sm font-medium 
-              text-zinc-900
-              hover:bg-zinc-200
+              text-zinc-200
+              dark:text-zinc-900
+              hover:bg-zinc-900
+              dark:hover:bg-zinc-200
               transition
             "
           >
