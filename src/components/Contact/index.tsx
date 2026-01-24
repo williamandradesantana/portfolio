@@ -37,7 +37,7 @@ export function Contact() {
         Entre em contato
       </a>
 
-      <div className="mt-12 flex items-center gap-6">
+      <div className="mt-12 flex flex-col sm:flex-row items-center gap-6">
         <a
           href="mailto:williamandrade1058@gmail.com"
           className="flex items-center gap-2 text-zinc-900 hover:underline dark:text-white dark:hover:text-white transition"

@@ -22,9 +22,10 @@ export function About() {
     <section
       id="about"
       className={clsx(
-        "grid grid-cols-1 min-h-screen scroll-mt-24",
-        "lg:grid-cols-2 lg:gap-16",
-        "max-w-6xl mx-auto px-6",
+        "grid grid-cols-1 scroll-mt-24",
+
+        "lg:grid-cols-2 gap-6 lg:gap-16",
+        "max-w-6xl mx-auto my-12 px-6",
       )}
     >
       <div className="flex flex-col gap-4 max-w-lg">

@@ -4,21 +4,26 @@ import clsx from "clsx";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative text-center gap-6 max-w-xl">
-      <h3 className="text-zinc-500 dark:text-zinc-300 text-md uppercase tracking-widest">
+    <section className="min-h-screen flex flex-col items-center justify-center relative text-center gap-6 w-full max-w-3xl px-6">
+      <h3
+        className={clsx(
+          "text-zinc-500 dark:text-zinc-300",
+          "text-sm md:text-md uppercase tracking-widest",
+        )}
+      >
         Desenvolvedor FullStack
       </h3>
 
-      <h1 className="text-4xl md:text-5xl font-semibold text-black dark:text-white">
+      <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-black dark:text-white">
         William Santana
       </h1>
 
-      <p className="text-zinc-500 dark:text-zinc-400 text-xl md:text-lg leading-relaxed">
+      <p className="text-md md:text-lg text-zinc-500 dark:text-zinc-400 leading-relaxed">
         Criando soluções eficientes, escaláveis e alinhadas às boas práticas de
         engenharia de software.
       </p>
 
-      <div className="flex gap-4 mt-4">
+      <div className="flex flex-col sm:flex-row gap-4 mt-4">
         <LinkSection
           linkProps={{
             href: "#projects",

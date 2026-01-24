@@ -19,7 +19,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex flex-col mx-auto px-6 items-center max-w-6xl scroll-mt-24"
+      className="flex flex-col my-12 mx-auto px-6 items-center max-w-6xl scroll-mt-24"
     >
       <div className="w-full md:max-w-6xl">
         <span className="text-zinc-600 dark:text-zinc-400 text-sm uppercase tracking-widest">

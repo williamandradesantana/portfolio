@@ -1,21 +1,25 @@
 import { Link } from "react-router";
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 export function NotFound() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-zinc-100 dark:bg-zinc-950 px-6">
-      <div className="max-w-md text-center flex flex-col items-center gap-6">
-        <h1 className="text-6xl font-bold text-black dark:text-white">
-          Página não encontrada
-        </h1>
+    <>
+      <Header />
+      <main className="min-h-screen flex items-center justify-center bg-zinc-100 dark:bg-zinc-950 px-6">
+        <div className="max-w-md text-center flex flex-col items-center gap-6">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold text-black dark:text-white">
+            Página não encontrada
+          </h1>
 
-        <p className="text-zinc-700 dark:text-zinc-400">
-          A página que você tentou acessar não existe ou foi movida.
-        </p>
+          <p className="text-zinc-700 dark:text-zinc-400">
+            A página que você tentou acessar não existe ou foi movida.
+          </p>
 
-        <div className="flex gap-4 mt-4">
-          <Link
-            to="/"
-            className="
+          <div className="flex gap-4 mt-4">
+            <Link
+              to="/"
+              className="
               rounded-md 
               bg-black
               dark:bg-white 
@@ -27,11 +31,13 @@ export function NotFound() {
               dark:hover:bg-zinc-200
               transition
             "
-          >
-            Voltar para o início
-          </Link>
+            >
+              Voltar para o início
+            </Link>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

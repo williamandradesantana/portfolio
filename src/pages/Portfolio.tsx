@@ -4,7 +4,16 @@ import { Main } from "../components/Main";
 
 export function Portfolio() {
   return (
-    <div className="min-h-screen flex flex-col overflow-y-auto bg-white dark:bg-black">
+    <div
+      className="
+        min-h-screen
+        flex flex-col
+        overflow-x-hidden
+        bg-white dark:bg-black
+        pt-16
+        md:pt-20
+      "
+    >
       <Header />
       <Main />
       <Footer />
