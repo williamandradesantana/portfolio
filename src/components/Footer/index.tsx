@@ -14,7 +14,7 @@ export function Footer() {
       )}
     >
       <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        &copy; William Santana. Todos os direitos reservados.
+        &copy; 2026 William Santana. Todos os direitos reservados.
       </p>
       <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         Feito com React.ts & Tailwindcss
