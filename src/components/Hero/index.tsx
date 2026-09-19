@@ -11,7 +11,7 @@ export function Hero() {
           "text-sm md:text-md uppercase tracking-widest",
         )}
       >
-        Desenvolvedor FullStack
+        Desenvolvedor Backend
       </h3>
 
       <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-black dark:text-white">
