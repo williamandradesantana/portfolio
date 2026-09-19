@@ -1,6 +1,48 @@
 {
   "certifications": [
     {
+      "name": "Spring Boot Expert: JPA, REST, JWT, OAuth2 com Docker e AWS",
+      "institution": "Udemy",
+      "link": "https://www.udemy.com/certificate/UC-67889f10-4ebd-4173-b5be-43952f3732b2/",
+      "yearOfCompletion": "2026"
+    },
+    {
+      "name": "Microservices com Spring Boot",
+      "institution": "Matheus Leandro",
+      "link": null,
+      "yearOfCompletion": "2026"
+    },
+    {
+      "name": "Spring Boot na Prática: Projetos Reais do Zero",
+      "institution": "Matheus Leandro",
+      "link": null,
+      "yearOfCompletion": "2026"
+    },
+    {
+      "name": "Fundamentos do Spring Boot",
+      "institution": "Rocketseat",
+      "link": "https://app.rocketseat.com.br/certificates/ff728928-e3db-4293-b1f8-a027b103a9db",
+      "yearOfCompletion": "2025"
+    },
+    {
+      "name": "Formação Java e Spring Boot",
+      "institution": "Alura",
+      "link": "https://cursos.alura.com.br/degree/certificate/5041537f-bdd6-4e5b-8148-9f9d8a69ad0c?lang",
+      "yearOfCompletion": "2024"
+    },
+    {
+      "name": "Formação Java Web: Spring Boot",
+      "institution": "Alura",
+      "link": "https://cursos.alura.com.br/degree/certificate/ca976e95-6ba1-4cdc-b1c2-f12027c806b1?lang",
+      "yearOfCompletion": "2024"
+    },
+    {
+      "name": "Google Cloud: Introdução à Nuvem",
+      "institution": "Colaborativa",
+      "link": "https://drive.google.com/file/d/13SMiSrjFfDJ-kYRTLuDLJlvuRI2aD7TL/view",
+      "yearOfCompletion": "2023"
+    },
+    {
       "name": "Ver todos",
       "institution": "Repositório completo",
       "link": "https://drive.google.com/drive/folders/1_3V7Ops7KaFkO3rrdlsmbXlZAPyPqbov?usp=drive_link",

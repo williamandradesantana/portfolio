@@ -43,13 +43,13 @@ export function CertificationsAndEducation() {
           Certificações
         </span>
 
-        <h2 className="text-zinc-900 dark:text-white text-3xl font-semibold leading-tight mt-1">
+        <h2 className="text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold leading-tight mt-1">
           Educação e Certificados
         </h2>
       </div>
 
       <div className="w-full mt-12">
-        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-500 uppercase">
+        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 uppercase">
           <GraduationCap size={16} />
           Educação
         </h3>
@@ -61,7 +61,7 @@ export function CertificationsAndEducation() {
               title={education.graduation}
               description={education.description}
               footer={
-                <div className="flex justify-between text-sm text-zinc-600 dark:text-zinc-400">
+                <div className="flex flex-col gap-1 sm:flex-row sm:justify-between text-sm md:text-base text-zinc-600 dark:text-zinc-400">
                   <span>{education.institution}</span>
                   <span>{education.duration}</span>
                 </div>
@@ -72,7 +72,7 @@ export function CertificationsAndEducation() {
       </div>
 
       <div className="w-full mt-12">
-        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-500 uppercase">
+        <h3 className="flex items-center gap-2 text-sm font-medium text-zinc-600 dark:text-zinc-400 uppercase">
           <Star size={16} />
           Certificados
         </h3>
@@ -84,7 +84,7 @@ export function CertificationsAndEducation() {
               title={certification.name}
               description={certification.institution}
               footer={
-                <div className="flex items-center justify-between text-sm text-zinc-600 dark:text-zinc-400">
+                <div className="flex items-center justify-between text-sm md:text-base text-zinc-600 dark:text-zinc-400">
                   <span>{certification.yearOfCompletion}</span>
 
                   {certification.link && (
@@ -99,7 +99,7 @@ export function CertificationsAndEducation() {
                       transition
                     "
                     >
-                      Ver certificados
+                      Ver certificado
                     </a>
                   )}
                 </div>
