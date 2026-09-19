@@ -1,25 +1,35 @@
 {
   "experiences": [
     {
+      "position": "Desenvolvedor de Software (Residência Tecnológica)",
+      "company": "Universidade Tiradentes (UNIT)",
+      "duration": "jan/2024 – dez/2025",
+      "description": "Programa de residência em que atuei em projetos sob demanda de empresas parceiras, com contato direto com o cliente.",
+      "mainActivities": [
+        "Jotanunes Construtora: desenvolvi a ObraSpec API (Django REST Framework + PostgreSQL) para padronizar especificações técnicas de obras e gerar documentos automaticamente, o que reduziu o retrabalho entre equipes. Migrei dados legados e planilhas complexas para um banco relacional normalizado.",
+        "Apoio Fiel: desenvolvi APIs REST com Node.js, TypeScript, Express, Fastify e Prisma ORM, com documentação em Swagger e versionamento com Git.",
+        "Atos Capital: automatizei a extração e interpretação de dados financeiros com N8N, Docker e API Waha, com alertas gravados no banco de dados para reduzir erros operacionais.",
+        "Grupo Tiradentes: reformulei o site do curso de Odontologia da UNIT com foco em usabilidade, desempenho e responsividade (HTML, CSS, JavaScript, Bootstrap)."
+      ]
+    },
+    {
       "position": "Desenvolvedor Full Stack",
       "company": "Quantum Educacional",
-      "description": "A Quantum é uma empresa do segmento educacional que oferece produtos como cursos de programação para crianças e alunos do ensino fundamental e médio, atendendo escolas públicas e particulares.",
-      "duration": "Dez 2024 - Mar 2025",
+      "duration": "dez/2024 – mai/2025",
+      "description": "Atuação full stack na plataforma educacional EZ, com backend em Django e frontend em JavaScript.",
       "mainActivities": [
-        "Desenvolvimento de novas funcionalidades e manutenção utilizando Django",
-        "Redesign do sistema, utilizando Material UI para melhorar a experiência do usuário",
-        "Versionamento de código com Git e GitLab"
+        "Corrigi falhas e implementei melhorias no backend em Django (Python), com queda de 10% nos erros reportados em produção.",
+        "Melhorei a responsividade da plataforma EZ (JavaScript, Material Design), reduzindo em 20% as reclamações de acesso pelo celular."
       ]
     },
     {
       "position": "Desenvolvedor RPA",
-      "company": "InfluirTec",
-      "description": "Atuei na análise e otimização de processos, garantindo que as automações refletissem fielmente os fluxos de negócio. Desenvolvi soluções automatizadas que reduziram o tempo de execução, anteciparam falhas de processo e elevaram a confiabilidade operacional.",
-      "duration": "Mar 2024 - Nov 2024",
+      "company": "Influir Tec",
+      "duration": "mar/2024 – nov/2024",
+      "description": "Automação de processos internos e integração entre sistemas.",
       "mainActivities": [
-        "Desenvolvimento de automações em Python e JavaScript",
-        "Implantação de soluções automatizadas",
-        "Testes de automações"
+        "Automatizei processos de ponta a ponta com C#, Python, Selenium e JavaScript, reduzindo em até 20% o tempo das tarefas internas e em 30% as falhas manuais.",
+        "Criei scripts de integração com APIs para conectar sistemas internos e eliminar etapas manuais."
       ]
     }
   ]
