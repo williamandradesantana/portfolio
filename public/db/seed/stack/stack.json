@@ -1,19 +1,21 @@
 {
   "stack": {
     "tecnologies": [
-      "Python",
-      "Django",
-      "Django Rest Framework",
-      "JavaScript",
-      "React",
-      "TypeScript",
       "Java",
       "Spring Boot",
-      "Git",
-      "GitHub",
-      "MySQL",
+      "C#",
+      ".NET",
+      "Spring Security",
+      "OAuth2/JWT",
+      "Keycloak",
+      "JPA/Hibernate",
       "PostgreSQL",
-      "Docker"
+      "RabbitMQ",
+      "Docker",
+      "GitHub Actions",
+      "Terraform",
+      "JUnit 5",
+      "Testcontainers"
     ]
   }
 }
