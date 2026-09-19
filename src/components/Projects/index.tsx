@@ -25,15 +25,15 @@ export function Projects() {
         <span className="text-zinc-600 dark:text-zinc-400 text-sm uppercase tracking-widest">
           Projetos
         </span>
-        <h2 className="text-zinc-900 dark:text-white text-3xl font-semibold leading-tight mt-1">
-          Trabalhos relacionados
+        <h2 className="text-zinc-900 dark:text-white text-3xl md:text-4xl font-semibold leading-tight mt-1">
+          Projetos em destaque
         </h2>
       </div>
 
       <SectionList>
         {projects.map((project, index) => (
           <InfoCard
-            key={`${project}-${index}`}
+            key={`${project.name}-${index}`}
             title={project.name}
             description={project.description}
             footer={<ProjectFooter project={project} />}
