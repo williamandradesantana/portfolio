@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "#experiences", label: "Experiência" },
   { href: "#projects", label: "Projetos" },
   { href: "#certifications", label: "Certificações" },
+  { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contato" },
 ];
 
@@ -27,14 +28,8 @@ export function Header() {
     light: <MoonIcon size={20} />,
   };
 
-  function handleChangeTheme(
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-  ) {
-    event.preventDefault();
-    setTheme((prevState) => {
-      const nextTheme = prevState === "dark" ? "light" : "dark";
-      return nextTheme;
-    });
+  function handleChangeTheme() {
+    setTheme((prevState) => (prevState === "dark" ? "light" : "dark"));
   }
 
   useEffect(() => {
@@ -54,7 +49,10 @@ export function Header() {
   }
 
   const commonLinkClasses =
-    "text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-zinc-500 transition-colors text-sm font-medium";
+    "text-zinc-600 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white transition-colors font-medium";
+
+  const iconButtonClasses =
+    "rounded-md p-2 text-zinc-600 dark:text-zinc-200 transition hover:bg-zinc-100 hover:text-zinc-900 cursor-pointer";
 
   return (
     <header className="top-0 fixed z-50 w-full border-b border-zinc-200 bg-white/80 backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/80">
@@ -67,42 +65,49 @@ export function Header() {
             title: "Ir para página inicial",
           }}
         >
-          Portfolio
+          William Santana
         </LinkSection>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {NAV_LINKS.map((link, index) => {
-            return (
-              <LinkSection
-                key={`${link.href}-${index}`}
-                linkProps={{
-                  href: link.href,
-                  className: commonLinkClasses,
-                  "aria-label": `Ir para ${link.label}`,
-                  title: `Ir para ${link.label}`,
-                }}
-              >
-                {" "}
-                {link.label}{" "}
-              </LinkSection>
-            );
-          })}
+        <nav
+          aria-label="Navegação principal"
+          className="hidden items-center gap-4 md:flex lg:gap-6"
+        >
+          {NAV_LINKS.map((link) => (
+            <LinkSection
+              key={link.href}
+              linkProps={{
+                href: link.href,
+                className: clsx(commonLinkClasses, "text-sm lg:text-base"),
+                "aria-label": `Ir para ${link.label}`,
+                title: `Ir para ${link.label}`,
+              }}
+            >
+              {link.label}
+            </LinkSection>
+          ))}
         </nav>
 
         <div className="flex items-center gap-2">
-          <a
-            href="#"
-            aria-label="Mudar tema"
+          <button
+            type="button"
+            aria-label={
+              theme === "dark"
+                ? "Mudar para tema claro"
+                : "Mudar para tema escuro"
+            }
             onClick={handleChangeTheme}
-            className="rounded-md p-2 text-zinc-600 dark:text-zinc-200 transition hover:bg-zinc-100 hover:text-zinc-900"
+            className={iconButtonClasses}
           >
             {nextThemeIcon[theme]}
-          </a>
+          </button>
 
           <button
+            type="button"
             onClick={() => setIsOpen((prev) => !prev)}
-            aria-label="Abrir menu"
-            className="rounded-md p-2 text-zinc-600 dark:text-zinc-200 transition hover:bg-zinc-100 hover:text-zinc-900 md:hidden"
+            aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-nav"
+            className={clsx(iconButtonClasses, "md:hidden")}
           >
             {isOpen ? <XIcon size={20} /> : <MenuIcon size={20} />}
           </button>
@@ -110,79 +115,29 @@ export function Header() {
       </div>
 
       <nav
+        id="mobile-nav"
+        aria-label="Navegação principal (mobile)"
         className={clsx(
           "md:hidden",
-          "overflow-hidden transition-all duration-300",
-          isOpen ? "opacity-100" : "max-h-0 opacity-0",
+          "overflow-hidden transition-all duration-300 motion-reduce:transition-none",
+          isOpen ? "max-h-96 opacity-100" : "invisible max-h-0 opacity-0",
         )}
       >
-        <div className="flex flex-col gap-3 border-t border-zinc-200 px-4 py-4">
-          <LinkSection
-            linkProps={{
-              href: "#about",
-              className: commonLinkClasses,
-              onClick: handleCloseMenu,
-              "aria-label": "Ir para sobre",
-              title: "Ir para sobre",
-            }}
-          >
-            Sobre
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#experiences",
-              className: commonLinkClasses,
-              onClick: handleCloseMenu,
-              "aria-label": "Ir para experiência",
-              title: "Ir para experiência",
-            }}
-          >
-            Experiência
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#projects",
-              className: commonLinkClasses,
-              onClick: handleCloseMenu,
-              "aria-label": "Ir para projetos",
-              title: "Ir para projetos",
-            }}
-          >
-            Projetos
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#certifications",
-              className: commonLinkClasses,
-              onClick: handleCloseMenu,
-              "aria-label": "Ir para certificações",
-              title: "Ir para certificações",
-            }}
-          >
-            Certificações
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#skills",
-              className: commonLinkClasses,
-              onClick: handleCloseMenu,
-              "aria-label": "Ir para skills",
-              title: "Ir para skills",
-            }}
-          >
-            Skills
-          </LinkSection>
-          <LinkSection
-            linkProps={{
-              href: "#contact",
-              className: commonLinkClasses,
-              onClick: handleCloseMenu,
-              "aria-label": "Ir para contato",
-              title: "Ir para contato",
-            }}
-          >
-            Contato
-          </LinkSection>
+        <div className="flex flex-col gap-3 border-t border-zinc-200 px-4 py-4 dark:border-zinc-800">
+          {NAV_LINKS.map((link) => (
+            <LinkSection
+              key={link.href}
+              linkProps={{
+                href: link.href,
+                className: clsx(commonLinkClasses, "text-base py-1"),
+                onClick: handleCloseMenu,
+                "aria-label": `Ir para ${link.label}`,
+                title: `Ir para ${link.label}`,
+              }}
+            >
+              {link.label}
+            </LinkSection>
+          ))}
         </div>
       </nav>
     </header>
