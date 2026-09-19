@@ -4,6 +4,9 @@ import { GrGithub } from "react-icons/gr";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 export function Contact() {
+  const socialLinkClasses =
+    "flex items-center gap-2 text-zinc-900 hover:underline underline-offset-4 dark:text-white transition";
+
   return (
     <section
       id="contact"
@@ -18,10 +21,10 @@ export function Contact() {
           Vamos trabalhar juntos!
         </h2>
 
-        <p className="text-zinc-500 text-base leading-relaxed">
-          Estou atualmente aberto a novas oportunidades e colaborações. Se você
-          tem um projeto em mente ou apenas quer dizer olá, sinta-se à vontade
-          para entrar em contato.
+        <p className="text-zinc-600 dark:text-zinc-400 text-base md:text-lg leading-relaxed">
+          Estou buscando uma vaga de Desenvolvedor Backend Júnior ou Pleno,
+          remoto ou híbrido, com base em Aracaju/SE. Se a sua equipe trabalha
+          com Java e Spring Boot ou com C# e .NET, vamos conversar.
         </p>
       </header>
 
@@ -34,24 +37,15 @@ export function Contact() {
         )}
       >
         <Mail size={18} />
-        Entre em contato
+        williamandrade1058@gmail.com
       </a>
 
-      <div className="mt-12 flex flex-col sm:flex-row items-center gap-6">
-        <a
-          href="mailto:williamandrade1058@gmail.com"
-          className="flex items-center gap-2 text-zinc-900 hover:underline dark:text-white dark:hover:text-white transition"
-          aria-label="Email"
-        >
-          <Mail size={18} />
-          Email
-        </a>
-
+      <div className="mt-10 flex flex-col sm:flex-row items-center gap-6">
         <a
           href="https://github.com/williamandradesantana"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-zinc-900 hover:underline dark:text-white dark:hover:text-white transition"
+          className={socialLinkClasses}
           aria-label="GitHub"
         >
           <GrGithub size={18} />
@@ -62,7 +56,7 @@ export function Contact() {
           href="https://www.linkedin.com/in/william-andrade-santana/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-zinc-900 hover:underline dark:text-white dark:hover:text-white transition"
+          className={socialLinkClasses}
           aria-label="LinkedIn"
         >
           <TiSocialLinkedin size={20} />
