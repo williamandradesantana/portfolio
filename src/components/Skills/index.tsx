@@ -14,20 +14,23 @@ export function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="mx-auto max-w-6xl px-6 py-24 scroll-mt-24">
-      <header className="mb-16">
-        <span className="text-zinc-600 dark:text-zinc-400 text-md uppercase tracking-[0.2em]">
+    <section
+      id="skills"
+      className="mx-auto max-w-6xl px-6 py-16 md:py-24 scroll-mt-24"
+    >
+      <header className="mb-12">
+        <span className="text-zinc-600 dark:text-zinc-400 text-sm uppercase tracking-widest">
           Skills
         </span>
-        <h2 className="mt-2 text-4xl font-semibold text-zinc-900 dark:text-white">
+        <h2 className="mt-1 text-3xl md:text-4xl font-semibold leading-tight text-zinc-900 dark:text-white">
           Tecnologias que uso
         </h2>
       </header>
 
-      <ul className="grid grid-cols-1 gap-12 md:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-12">
         {skills.map((skill) => (
           <li key={skill.type} className="space-y-4">
-            <h3 className="text-zinc-700 dark:text-zinc-300 font-medium">
+            <h3 className="text-base md:text-lg text-zinc-700 dark:text-zinc-300 font-medium">
               {skill.type}
             </h3>
             <div className="flex flex-wrap gap-2">

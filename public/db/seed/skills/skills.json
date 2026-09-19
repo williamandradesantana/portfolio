@@ -1,34 +1,97 @@
 {
   "skills": [
     {
-      "type": "Frontend",
+      "type": "Java",
       "tecnologies": [
-        "React.js",
-        "Next.js",
-        "JavaScript",
-        "TypeScript",
-        "Tailwind CSS",
-        "Material UI"
-      ]
-    },
-    {
-      "type": "Backend",
-      "tecnologies": [
-        "Python",
-        "Django",
-        "Django Rest Framework",
         "Java",
         "Spring Boot",
-        "Rest APIs"
+        "Spring Data JPA/Hibernate",
+        "Spring Security",
+        "Spring Cache",
+        "Bean Validation",
+        "MapStruct",
+        "Maven"
       ]
     },
     {
-      "type": "Database",
-      "tecnologies": ["MySQL", "PostgreSQL", "Django ORM"]
+      "type": "C# / .NET",
+      "tecnologies": ["C#", ".NET", "ASP.NET", "APIs REST"]
     },
     {
-      "type": "DevOps & Tools",
-      "tecnologies": ["Docker", "Git", "Github"]
+      "type": "APIs e segurança",
+      "tecnologies": [
+        "REST",
+        "OAuth2",
+        "JWT",
+        "Keycloak",
+        "OpenAPI/Swagger",
+        "Scalar",
+        "Integração entre sistemas via HTTP"
+      ]
+    },
+    {
+      "type": "Bancos de dados",
+      "tecnologies": [
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "Modelagem relacional",
+        "Flyway (migrations)"
+      ]
+    },
+    {
+      "type": "Testes e qualidade",
+      "tecnologies": [
+        "JUnit 5",
+        "Mockito",
+        "Testcontainers",
+        "Testes unitários",
+        "Testes de integração",
+        "Code review",
+        "Análise de logs"
+      ]
+    },
+    {
+      "type": "Arquitetura",
+      "tecnologies": [
+        "Arquitetura em camadas",
+        "MVC",
+        "DTOs",
+        "Tratamento global de exceções",
+        "Microsserviços",
+        "RabbitMQ (Spring AMQP)",
+        "DDD",
+        "Design Patterns"
+      ]
+    },
+    {
+      "type": "DevOps e cloud",
+      "tecnologies": [
+        "Docker",
+        "Docker Compose",
+        "GitHub Actions (CI)",
+        "Terraform",
+        "AWS (fundamentos)",
+        "Git",
+        "GitHub",
+        "GitLab"
+      ]
+    },
+    {
+      "type": "Outras tecnologias",
+      "tecnologies": [
+        "Python (Django, DRF)",
+        "Node.js/TypeScript (Express, Fastify)",
+        "React",
+        "Next.js",
+        "Selenium",
+        "Claude",
+        "Copilot"
+      ]
+    },
+    {
+      "type": "Metodologias",
+      "tecnologies": ["Scrum", "Kanban", "Documentação técnica"]
     }
   ]
 }
